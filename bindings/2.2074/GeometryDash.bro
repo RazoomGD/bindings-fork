@@ -4019,7 +4019,7 @@ class EditorUI : cocos2d::CCLayer, FLAlertLayerProtocol, ColorSelectDelegate, GJ
     TodoReturn createUndoSelectObject(bool) = win 0x10fb50;
     TodoReturn deactivateRotationControl();
     TodoReturn deactivateScaleControl() = win 0x113480;
-    TodoReturn deactivateTransformControl() = win 0x113ad0;
+    void deactivateTransformControl() = win 0x113ad0;
     void deleteObject(GameObject*, bool) = imac 0x32f70;
     TodoReturn deleteSmartBlocksFromObjects(cocos2d::CCArray*);
     TodoReturn deleteTypeFromObjects(int, cocos2d::CCArray*);
