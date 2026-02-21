@@ -119,5 +119,10 @@ void GJTransformControl::updateAnchorSprite(cocos2d::CCPoint position) {
 #endif
 
 #if defined(GEODE_IS_IOS)
+
+cocos2d::CCSprite* GJTransformControl::spriteByTag(int tag) {
+    return static_cast<cocos2d::CCSprite*>(m_warpSprites->objectAtIndex(tag - 1));
+}
+
 #endif
 
